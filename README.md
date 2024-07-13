@@ -1,1 +1,1 @@
-Personal website - Ganghui Yi
+Personal website

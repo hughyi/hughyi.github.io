@@ -126,7 +126,7 @@
     if (data.total) {
       caption.textContent =
         data.total.toLocaleString("en-US") + (data.total === 1 ? " visitor" : " visitors") +
-        " from " + data.countries + (data.countries === 1 ? " country" : " countries");
+        " \u00b7 " + data.countries + (data.countries === 1 ? " country" : " countries");
     }
 
     var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;

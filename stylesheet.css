@@ -208,8 +208,7 @@ span.highlight {
 	min-height: 1em;
 	text-align: center;
 	font-family: "Lato", Verdana, Helvetica, sans-serif;
-	font-size: 9px;
+	font-size: 10px;
 	color: #aaa;
-	letter-spacing: 0.14em;
-	text-transform: uppercase;
+	letter-spacing: 0.02em;
 }

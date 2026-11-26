@@ -161,3 +161,53 @@ h2 {
 span.highlight {
 	background-color: #ffffd0;
 }
+/* Visitor map */
+.visitor-map {
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+.visitor-map__canvas {
+	position: relative;
+}
+
+.visitor-map__canvas canvas {
+	display: block;
+	width: 100%;
+}
+
+.visitor-map__you {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	margin: -2.5px 0 0 -2.5px;
+	border-radius: 50%;
+	background: #f09228;
+}
+
+.visitor-map__you::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	background: #f09228;
+	animation: visitor-map-pulse 2.4s ease-out infinite;
+}
+
+@keyframes visitor-map-pulse {
+	from { transform: scale(1); opacity: 0.6; }
+	to { transform: scale(4.5); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.visitor-map__you::after { animation: none; }
+}
+
+.visitor-map__caption {
+	margin: 10px 0 0;
+	min-height: 1em;
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+	letter-spacing: 0.02em;
+}

@@ -207,9 +207,9 @@ span.highlight {
 	margin: 8px 0 0;
 	min-height: 1em;
 	text-align: center;
-	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-	font-size: 10px;
+	font-family: "Lato", Verdana, Helvetica, sans-serif;
+	font-size: 9px;
 	color: #aaa;
-	letter-spacing: 0.06em;
-	font-variant-numeric: tabular-nums;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
 }
